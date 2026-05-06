@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className='flex gap-6 items-center text-[#000000]'>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/contact">Programs</Link>
+        <Link href="/programs">Programs</Link>
         <Link href="/how-we-teach">How We Teach</Link>
         <Link href="/admissions">Admissions</Link>
         <Link href="/resources">Resources</Link>
