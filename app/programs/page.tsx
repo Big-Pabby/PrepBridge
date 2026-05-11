@@ -41,9 +41,7 @@ const examPrograms = [
     region: "Nigeria",
     title: "JAMB",
     icon: (
-      <div className="h-12 w-12 rounded-full bg-[#0F4C2A] flex items-center justify-center text-white text-[10px] font-bold text-center leading-tight px-1">
-        JAMB
-      </div>
+     <img src="/jamb.svg" className="w-12" alt="" />
     ),
     text: "Required exam for admission into Nigeria Universities",
   },
@@ -52,9 +50,7 @@ const examPrograms = [
     region: "Nigeria",
     title: "WAEC",
     icon: (
-      <div className="h-12 w-12 rounded-full bg-[#F5A623] flex items-center justify-center text-white text-[10px] font-bold">
-        WAEC
-      </div>
+     <img src="/waec.svg" className="w-12" alt="" />
     ),
     text: "West African senior school certificate exam.",
   },
