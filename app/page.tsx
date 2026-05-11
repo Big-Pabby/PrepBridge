@@ -51,13 +51,13 @@ export default function Home() {
               GCSE Program
             </div>
             <div className="bg-white py-6 text-center px-3">
-              GCSE Program
+             Academic Skills Workshop
             </div>
             <div className="bg-white py-6 text-center px-3">
-              GCSE Program
+             Exam-focused Preparation
             </div>
             <div className="bg-white py-6 text-center px-3">
-              GCSE Program
+             General Academic Development
             </div>
 
           </div>
