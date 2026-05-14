@@ -1,9 +1,10 @@
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Separator } from "../../components/ui/separator";
+import Link from "next/link";
 import React from "react";
 import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
-import { BsLinkedin, BsFacebook, BsTwitterX } from "react-icons/bs";
+import { BsLinkedin, BsFacebook, BsTwitterX, BsInstagram } from "react-icons/bs";
 
 const contactItems = [
   {
@@ -32,29 +33,39 @@ const footerLinkGroups = [
   {
     title: "Explore",
     links: [
-      "Home",
-      "About Us",
-      "GCSE Program",
-      "JAMB Program",
-      "All Exams",
-      "Academic Development",
+      { label: "Home", href: "/" },
+      { label: "About Us", href: "/about" },
+      { label: "GCSE Program", href: "/programs" },
+      { label: "JAMB Program", href: "/programs" },
+      { label: "All Exams", href: "/programs" },
+      { label: "Academic Development", href: "/how-we-teach" },
     ],
   },
   {
     title: "Resources",
-    links: ["Free Resource Corner", "Study Tips", "Learning Resources", "Blog"],
+    links: [
+      { label: "Free Resource Corner", href: "/resources" },
+      { label: "Study Tips", href: "/resources" },
+      { label: "Learning Resources", href: "/resources" },
+      { label: "Blog", href: "/resources" },
+    ],
   },
   {
     title: "Legal",
-    links: ["Privacy Policy", "Terms", "Academic Integrity", "Refund Policy"],
+    links: [
+      { label: "Privacy Policy", href: "#" },
+      { label: "Terms", href: "#" },
+      { label: "Academic Integrity", href: "#" },
+      { label: "Refund Policy", href: "#" },
+    ],
   },
 ];
 
 const supportLinks = [
-  "FAQs",
-  "Contact Us",
-  "Book Consultation",
-  "Join Waitlist",
+  { label: "FAQs", href: "/faq" },
+  { label: "Contact Us", href: "/admissions" },
+  { label: "Book Consultation", href: "https://wa.me/message/25PXCVIEB53CA1" },
+  { label: "Join Waitlist", href: "/admissions" },
 ];
 
 export const FooterSection = (): React.ReactElement => {
@@ -109,13 +120,13 @@ export const FooterSection = (): React.ReactElement => {
                     </h2>
                     <ul className="flex flex-col gap-3">
                       {group.links.map((link) => (
-                        <li key={link}>
-                          <button
-                            type="button"
+                        <li key={link.label}>
+                          <Link
+                            href={link.href}
                             className="text-left  text-base font-normal ] text-black transition-opacity hover:opacity-80"
                           >
-                            {link}
-                          </button>
+                            {link.label}
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -134,11 +145,17 @@ export const FooterSection = (): React.ReactElement => {
                       <div className="flex min-h-16 flex-col justify-start rounded-b">
                         <div className="mt-[19px] h-[45px] rounded bg-[#3b532e] shadow-[0px_1px_4px_#00000040]" />
                         <Button
-                          type="button"
+                          asChild
                           variant="secondary"
                           className="-mt-[64px] ml-[25px] flex h-[35px] w-[231px] items-center justify-center rounded bg-white p-2.5  text-sm font-normal  text-[#1d1d1d] hover:bg-white"
                         >
-                          Book Free Consultation
+                          <a
+                            href="https://wa.me/message/25PXCVIEB53CA1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Book Free Consultation
+                          </a>
                         </Button>
                       </div>
                     </div>
@@ -155,25 +172,59 @@ export const FooterSection = (): React.ReactElement => {
                 </h2>
                 <div className="flex flex-1 flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                   <ul className="flex flex-wrap items-start gap-x-6 gap-y-2 lg:justify-between">
-                    {supportLinks.map((link) => (
-                      <li key={link}>
-                        <button
-                          type="button"
-                          className=" text-base font-normal text-black transition-opacity hover:opacity-80"
-                        >
-                          {link}
-                        </button>
-                      </li>
-                    ))}
+                    {supportLinks.map((link) => {
+                      const external = link.href.startsWith("http");
+                      const className =
+                        " text-base font-normal text-black transition-opacity hover:opacity-80";
+                      return (
+                        <li key={link.label}>
+                          {external ? (
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={className}
+                            >
+                              {link.label}
+                            </a>
+                          ) : (
+                            <Link href={link.href} className={className}>
+                              {link.label}
+                            </Link>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 <div className="flex gap-4 items-center">
-                    <a href="#" className="text-black hover:text-gray-600">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61578260645216"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                      className="text-black hover:text-gray-600"
+                    >
                       <BsFacebook className="h-4 w-4" />
                     </a>
-                    <a href="#" className="text-black hover:text-gray-600">
+                    <a
+                      href="https://www.instagram.com/prepbridgehq?igsh=dm9nZGdncDR4ZHZo&utm_source=qr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                      className="text-black hover:text-gray-600"
+                    >
+                      <BsInstagram className="h-4 w-4" />
+                    </a>
+                    <a href="#" aria-label="LinkedIn" className="text-black hover:text-gray-600">
                       <BsLinkedin className="h-4 w-4" />
                     </a>
-                    <a href="#" className="text-black hover:text-gray-600">
+                    <a
+                      href="https://x.com/prepbridgehq?s=21"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="X (Twitter)"
+                      className="text-black hover:text-gray-600"
+                    >
                       <BsTwitterX className="h-4 w-4" />
                     </a>
                 </div>

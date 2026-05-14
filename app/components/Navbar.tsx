@@ -47,9 +47,14 @@ const Navbar = () => {
           })}
         </div>
 
-        <button className='hidden lg:block bg-[#5F8A48] text-white px-3 py-2.5 rounded-[8px]'>
+        <a
+          href='https://wa.me/message/25PXCVIEB53CA1'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='hidden lg:inline-block bg-[#5F8A48] text-white px-3 py-2.5 rounded-[8px]'
+        >
           Book Consultation
-        </button>
+        </a>
 
         <button
           type='button'
@@ -83,9 +88,15 @@ const Navbar = () => {
                 </Link>
               )
             })}
-            <button className='bg-[#5F8A48] text-white px-3 py-2.5 rounded-[8px] mt-2 self-start'>
+            <a
+              href='https://wa.me/message/25PXCVIEB53CA1'
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={() => setOpen(false)}
+              className='bg-[#5F8A48] text-white px-3 py-2.5 rounded-[8px] mt-2 self-start'
+            >
               Book Consultation
-            </button>
+            </a>
           </div>
         </div>
       )}

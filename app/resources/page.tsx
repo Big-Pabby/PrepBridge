@@ -78,9 +78,14 @@ export default function Resources() {
             A hub of free, high-quality academic resources for students, parents
             and independent learners.
           </p>
-          <button className="bg-[#5F8A48] text-white px-6 py-3 rounded-md">
+          <a
+            href="https://wa.me/message/25PXCVIEB53CA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#5F8A48] text-white px-6 py-3 rounded-md inline-block w-fit"
+          >
             Book Consultation
-          </button>
+          </a>
         </div>
       </section>
 

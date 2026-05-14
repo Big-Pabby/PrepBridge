@@ -120,9 +120,14 @@ export default function Programs() {
             <button className="bg-[#5F8A48] text-white px-6 py-3 rounded-md">
               Explore GCSE Program
             </button>
-            <button className="bg-white/10 backdrop-blur text-white border border-white/40 px-6 py-3 rounded-md">
+            <a
+              href="https://wa.me/message/25PXCVIEB53CA1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 backdrop-blur text-white border border-white/40 px-6 py-3 rounded-md inline-block"
+            >
               Book Consultation
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -205,9 +210,14 @@ export default function Programs() {
               <button className="bg-[#5F8A48] text-white px-6 py-2.5 rounded-md text-sm">
                 Request Program Details
               </button>
-              <button className="bg-white border border-[#1D1D1D] text-[#1D1D1D] px-6 py-2.5 rounded-md text-sm">
+              <a
+                href="https://wa.me/message/25PXCVIEB53CA1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border border-[#1D1D1D] text-[#1D1D1D] px-6 py-2.5 rounded-md text-sm inline-block"
+              >
                 Book Free Consultation
-              </button>
+              </a>
             </div>
           </div>
           <div className="flex justify-center">

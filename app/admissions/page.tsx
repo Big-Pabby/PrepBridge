@@ -116,9 +116,14 @@ export default function Admissions() {
             Join our structured, accountable academic environment designed to
             ensure each learner&apos;s success.
           </p>
-          <button className="bg-[#5F8A48] text-white px-6 py-3 rounded-md">
+          <a
+            href="https://wa.me/message/25PXCVIEB53CA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#5F8A48] text-white px-6 py-3 rounded-md inline-block w-fit"
+          >
             Book Consultation
-          </button>
+          </a>
         </div>
       </section>
 
@@ -226,9 +231,14 @@ export default function Admissions() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 pt-4">
-          <button className="bg-[#5F8A48] text-white px-8 py-2.5 rounded-md">
+          <a
+            href="https://wa.me/message/25PXCVIEB53CA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#5F8A48] text-white px-8 py-2.5 rounded-md inline-block"
+          >
             Book Consultation
-          </button>
+          </a>
           <button className="bg-white border border-[#1D1D1D] text-[#1D1D1D] px-8 py-2.5 rounded-md">
             Speak to an Academic Advisor
           </button>
