@@ -20,7 +20,7 @@ const contactItems = [
   {
     icon: <FiMapPin className="h-4 w-4" />,
     alt: "Location",
-    text: "9, Grosvenor road. W7 1HR. United Kingdom.",
+    text: "49, Grosvenor road, Ealing Broadway. United Kingdom.",
   },
   {
     icon: <FiMail className="h-4 w-4" />,
