@@ -16,9 +16,14 @@ export default function Home() {
               <h1 className="font-bold text-3xl md:text-5xl">GCSE</h1>
               <p className="text-lg md:text-xl">Academic Preparation</p>
             </div>
-            <button className="bg-[#5F8A48] text-white px-6 py-3 rounded-[8px]">
+            <a
+              href="https://wa.me/message/25PXCVIEB53CA1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#5F8A48] text-white px-6 py-3 rounded-[8px] inline-block w-fit"
+            >
               Book Consultation
-            </button>
+            </a>
           </div>
           <div className="w-full md:w-5/12 p-6 bg-[#FFFFFF99] rounded-[12px] min-h-[320px] md:h-[400px] flex flex-col justify-between items-start gap-6">
             <div className="space-y-3">
@@ -37,9 +42,14 @@ export default function Home() {
           <li className="ml-6">Tech-enabled</li>
         </ul>
         <div className="flex justify-center items-center">
-          <button className="bg-[#FFFFFF] text-[#1D1D1D] px-12 max-w-[450px] w-full py-3 rounded-[8px]">
-           Book Consultation
-          </button>
+          <a
+            href="https://wa.me/message/25PXCVIEB53CA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FFFFFF] text-[#1D1D1D] px-12 max-w-[450px] w-full py-3 rounded-[8px] text-center"
+          >
+            Book Consultation
+          </a>
         </div>
       </div>
       <div className="py-12 md:px-20 px-6 space-y-10 md:space-y-16"  style={{
@@ -94,9 +104,14 @@ export default function Home() {
       <div className="min-h-[350px] w-full flex flex-col sm:flex-row justify-center items-center gap-4 px-6 py-10 !bg-[#486A36]"  style={{
           background: `url('/cta.svg') center/cover no-repeat`,
         }}>
-          <button className="bg-[#FFFFFF] text-[#1D1D1D] w-full sm:w-auto px-8 sm:px-12 py-3 rounded-[8px]">
-           Book Consultation
-          </button>
+          <a
+            href="https://wa.me/message/25PXCVIEB53CA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FFFFFF] text-[#1D1D1D] w-full sm:w-auto px-8 sm:px-12 py-3 rounded-[8px] text-center"
+          >
+            Book Consultation
+          </a>
           <button className="bg-[#FFFFFF] text-[#1D1D1D] w-full sm:w-auto px-8 sm:px-12 py-3 rounded-[8px]">
           Speak to An Adviser
           </button>

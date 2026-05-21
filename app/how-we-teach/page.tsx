@@ -103,9 +103,14 @@ export default function HowWeTeach() {
             Every learner progresses through a clearly monitored academic
             journey.
           </p>
-          <button className="bg-[#5F8A48] text-white px-6 py-3 rounded-md">
+          <a
+            href="https://wa.me/message/25PXCVIEB53CA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#5F8A48] text-white px-6 py-3 rounded-md inline-block w-fit"
+          >
             Book Consultation
-          </button>
+          </a>
         </div>
       </section>
 
@@ -246,9 +251,14 @@ export default function HowWeTeach() {
           ))}
         </div>
         <div className="flex justify-center">
-          <button className="bg-[#5F8A48] text-white px-12 py-3 rounded-md">
+          <a
+            href="https://wa.me/message/25PXCVIEB53CA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#5F8A48] text-white px-12 py-3 rounded-md inline-block"
+          >
             Book Consultation
-          </button>
+          </a>
         </div>
       </section>
     </div>
