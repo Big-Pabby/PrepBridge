@@ -50,22 +50,22 @@ const footerLinkGroups = [
       { label: "Blog", href: "/resources" },
     ],
   },
-  {
-    title: "Legal",
-    links: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms", href: "#" },
-      { label: "Academic Integrity", href: "#" },
-      { label: "Refund Policy", href: "#" },
-    ],
-  },
+  // {
+  //   title: "Legal",
+  //   links: [
+  //     { label: "Privacy Policy", href: "#" },
+  //     { label: "Terms", href: "#" },
+  //     { label: "Academic Integrity", href: "#" },
+  //     { label: "Refund Policy", href: "#" },
+  //   ],
+  // },
 ];
 
 const supportLinks = [
   { label: "FAQs", href: "/faq" },
   { label: "Contact Us", href: "/admissions" },
   { label: "Book Consultation", href: "https://wa.me/message/25PXCVIEB53CA1" },
-  { label: "Join Waitlist", href: "/admissions" },
+  // { label: "Join Waitlist", href: "/admissions" },
 ];
 
 export const FooterSection = (): React.ReactElement => {
