@@ -10,7 +10,12 @@ const contactItems = [
   {
     icon: <FiPhone className="h-4 w-4" />,
     alt: "Phone",
-    text: "09135758651",
+    text: "🇳🇬 +234 9135758651",
+  },
+  {
+    icon: <FiPhone className="h-4 w-4" />,
+    alt: "Phone",
+    text: "🇬🇧 +44 7307705877",
   },
   {
     icon: <FiMapPin className="h-4 w-4" />,
@@ -25,7 +30,7 @@ const contactItems = [
   {
     icon: <FiMail className="h-4 w-4" />,
     alt: "Email",
-    text: "info@prepbridgehq.com",
+    text: "prepbridgeltd@gmail.com",
   },
 ];
 
@@ -138,7 +143,7 @@ export const FooterSection = (): React.ReactElement => {
                   <div className="flex flex-col">
                     <div className="flex min-h-24 items-start rounded-t bg-[#5f8a48] px-6 py-8">
                       <h3 className=" text-2xl font-bold  text-white">
-                        Start Your Academic Journey with PregBridge
+                        Start Your Academic Journey with PrepBridge
                       </h3>
                     </div>
                     <div className="-mt-6 px-0">
