@@ -1,9 +1,24 @@
+import type { Metadata } from "next";
 import {
   FaGraduationCap,
   FaChartLine,
   FaUniversity,
   FaFileAlt,
 } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "Programs",
+  description:
+    "Expert GCSE and JAMB preparation with a comprehensive, internationally-aligned curriculum designed to help students excel in their exams.",
+  alternates: { canonical: "/programs" },
+  openGraph: {
+    title: "PrepBridge Programs - GCSE & JAMB Preparation",
+    description:
+      "Structured GCSE and JAMB programs with full curriculum coverage, expert tutoring, and exam-focused practice.",
+    url: "/programs",
+    type: "website",
+  },
+};
 
 const coreFocus = [
   {

@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import { FaClipboardList } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "Resources",
+  description:
+    "A hub of free, high-quality academic resources for students, parents, and independent learners - study tips, blog posts, and learning material from PrepBridge.",
+  alternates: { canonical: "/resources" },
+  openGraph: {
+    title: "PrepBridge Resources Corner",
+    description:
+      "Free academic resources, study tips, and learning material from PrepBridge.",
+    url: "/resources",
+    type: "website",
+  },
+};
 
 const academicBlog = [
   "Practical tips for effective learning.",

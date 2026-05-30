@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   FaClipboardCheck,
   FaUserGraduate,
@@ -7,6 +8,20 @@ import {
   FaChartLine,
   FaStar,
 } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "How We Teach",
+  description:
+    "Discover PrepBridge's structured teaching approach - diagnostic assessment, smart placement, and personalised academic pathways built for exam success.",
+  alternates: { canonical: "/how-we-teach" },
+  openGraph: {
+    title: "How PrepBridge Teaches",
+    description:
+      "Our structured teaching methodology: diagnostic assessment, smart placement, and personalised academic pathways.",
+    url: "/how-we-teach",
+    type: "website",
+  },
+};
 
 const journeySteps = [
   {

@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import { FiTool, FiEdit, FiTarget, FiTrendingUp } from "react-icons/fi";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "PrepBridge is a technology-driven academic learning centre delivering exam-focused, curriculum-aligned preparation with defined academic standards and ethical excellence for local and international examination pathways.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About PrepBridge",
+    description:
+      "Learn about PrepBridge's mission, academic leadership, and the structured system behind our exam-focused learning.",
+    url: "/about",
+    type: "website",
+  },
+};
 
 const leadershipItems = [
   {

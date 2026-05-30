@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   FaFileAlt,
   FaUserTie,
@@ -5,6 +6,20 @@ import {
   FaTerminal,
   FaCheckCircle,
 } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "Admissions & Enrollment",
+  description:
+    "Join PrepBridge's structured, accountable academic environment designed to ensure each learner's success. Apply for GCSE, JAMB, WAEC, SAT and more.",
+  alternates: { canonical: "/admissions" },
+  openGraph: {
+    title: "PrepBridge Admissions & Enrollment",
+    description:
+      "Apply to PrepBridge's structured academic programs for GCSE, JAMB, WAEC, and SAT preparation.",
+    url: "/admissions",
+    type: "website",
+  },
+};
 
 const enrollItems = [
   "Secondary School Students & Pre-University Learners",
